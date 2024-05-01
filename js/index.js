@@ -42,7 +42,7 @@ const $video = document.querySelector('video')
 
      
      function handleLoaded() {
-        $progress.max = $video.duration
+        $progress.max = Math.ceil($video.duration)
 
         console.log('a cargado mi video' , $video.duration)
      }
